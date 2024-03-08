@@ -8,6 +8,15 @@
 <li>review</li>
 </ul>
 
-<pre>
-  pip install -r requirements.txt
-</pre>
+```bash
+
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+```
+after creating username and password
+```bash
+python manage.py runserver
+```
+go to the url most probably http://localhost:8000/admin
