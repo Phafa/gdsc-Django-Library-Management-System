@@ -38,7 +38,7 @@ class BorrowedBook(models.Model):
 class Review(models.Model):
     review_id = models.AutoField(primary_key=True)
     review_text = models.TextField()
-    rating = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)])   
+    rating = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)])
     student = models.ForeignKey('User', on_delete=models.CASCADE)
     book = models.ForeignKey('Book', on_delete=models.CASCADE)
     date = models.DateTimeField()
