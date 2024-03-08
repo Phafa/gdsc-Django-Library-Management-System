@@ -10,6 +10,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=100, null=True, blank=True)
     role = models.CharField(max_length=100)
     date_joined = models.DateTimeField(auto_now_add=True)
+    is_banned = models.BooleanField()
     def __str__(self):
         return self.username
 
