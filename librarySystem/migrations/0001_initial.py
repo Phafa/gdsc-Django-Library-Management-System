@@ -14,14 +14,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Book',
+            name='Genre',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200)),
-                ('author', models.CharField(max_length=100)),
-                ('genre', models.CharField(max_length=100)),
-                ('status', models.CharField(choices=[('AVAILABLE', 'Available'), ('BORROWED', 'Borrowed'), ('RESERVED', 'Reserved')], max_length=100)),
-                ('average_rating', models.DecimalField(decimal_places=2, max_digits=5)),
+                ('id', models.AutoField(primary_key=True, serialize=False)),
+                ('name', models.CharField(max_length=100)),
             ],
         ),
         migrations.CreateModel(
