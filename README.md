@@ -7,3 +7,7 @@
 <li>loan</li>
 <li>review</li>
 </ul>
+
+<pre>
+  pip install -r requirements.txt
+</pre>
