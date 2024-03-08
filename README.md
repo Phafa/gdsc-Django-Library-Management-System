@@ -4,8 +4,9 @@
 <ul>
 <li>users</li>
 <li>book</li>
-<li>loan</li>
+<li>borrowedbook</li>
 <li>review</li>
+<li>genre</li>
 </ul>
 
 ```bash
